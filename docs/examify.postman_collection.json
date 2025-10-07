@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "c25d1935-3f54-400f-ad4c-917e1619b1e4",
+		"name": "Examify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "754118",
+		"_collection_link": "https://red-shadow-281956.postman.co/workspace/Learn~bdaa03a9-46d4-4d79-9758-ba6a582b259e/collection/754118-c25d1935-3f54-400f-ad4c-917e1619b1e4?action=share&source=collection_link&creator=754118"
+	},
+	"item": [
+		{
+			"name": "Exame",
+			"item": [
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/exams/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"exams",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"PC RN\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/exams/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"exams",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "retrieve",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/exams/6/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"exams",
+								"6",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/exams/1/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"exams",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"PC RS\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/exams/8/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"exams",
+								"8",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "partial_update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"PC RN\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/exams/8/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"exams",
+								"8",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Submissão",
+			"item": [
+				{
+					"name": "submit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"student\": 1,\n        \"exam\": 2,\n        \"question\": 6,\n        \"alternative\": 21,\n        \"justify_alternative\": \"A alternativa B é a correta porque...\"\n    },\n    {\n        \"student\": 1,\n        \"exam\": 2,\n        \"question\": 7,\n        \"alternative\": 25,\n        \"justify_alternative\": \"A alternativa B é a correta porque...\"\n    },\n    {\n        \"student\": 1,\n        \"exam\": 2,\n        \"question\": 8,\n        \"alternative\": 29,\n        \"justify_alternative\": \"A alternativa B é a correta porque...\"\n    },\n    {\n        \"student\": 1,\n        \"exam\": 2,\n        \"question\": 9,\n        \"alternative\": 33,\n        \"justify_alternative\": \"A alternativa B é a correta porque...\"\n    },\n    {\n        \"student\": 1,\n        \"exam\": 2,\n        \"question\": 10,\n        \"alternative\": 37,\n        \"justify_alternative\": \"\"\n    }\n    \n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/1/student/2/submit/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"1",
+								"student",
+								"2",
+								"submit",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Resultado",
+			"item": [
+				{
+					"name": "results",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/2/student/1/results/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"2",
+								"student",
+								"1",
+								"results",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
