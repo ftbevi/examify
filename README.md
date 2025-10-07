@@ -1,4 +1,4 @@
-### Projeto Medway
+## Projeto Examify
 
 Aqui nesse repositório temos um projeto Django básico, já configurado para uso.
 
@@ -22,3 +22,12 @@ Uma vez dentro do container, pode-se criar um usuário/estudante com o comando:
 `python manage.py createsuperuser`
 
 E utilizar essas credenciais para acessar o admin em http://0.0.0.0:8000/admin/.
+
+### Collection
+
+Na pasta /docs existe uma collection para facilitar o acesso as apis.
+
+Além de também possuir uma documentação nas seguintes rotas:
+- http://0.0.0.0:8000/api/schema/docs/
+- http://0.0.0.0:8000/api/schema/redoc/
+
