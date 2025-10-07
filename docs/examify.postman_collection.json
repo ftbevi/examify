@@ -175,12 +175,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseURL}}/api/1/student/2/submit/",
+							"raw": "{{baseURL}}/api/exams/1/student/2/submit/",
 							"host": [
 								"{{baseURL}}"
 							],
 							"path": [
 								"api",
+								"exams",
 								"1",
 								"student",
 								"2",
@@ -202,12 +203,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{baseURL}}/api/2/student/1/results/",
+							"raw": "{{baseURL}}/api/exams/2/student/1/results/",
 							"host": [
 								"{{baseURL}}"
 							],
 							"path": [
 								"api",
+								"exams",
 								"2",
 								"student",
 								"1",
