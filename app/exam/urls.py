@@ -10,12 +10,12 @@ router.register(r'exams', ExamViewSet, basename='exam')
 urlpatterns = [
     path('', include(router.urls)),
     path(
-        "<int:exam_id>/student/<int:student_id>/results/",
+        "exams/<int:exam_id>/student/<int:student_id>/results/",
         ExamResult.as_view(),
         name="exam-student-result",
     ),
     path(
-        "<int:exam_id>/student/<int:student_id>/submit/",
+        "exams/<int:exam_id>/student/<int:student_id>/submit/",
         ExamSubmit.as_view(),
         name="exam-student-submit",
     )
