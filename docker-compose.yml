@@ -6,7 +6,7 @@ services:
     restart: always
     environment:
       - PYTHONUNBUFFERED=1
-      - DJANGO_SETTINGS_MODULE=examify.settings
+      - DJANGO_SETTINGS_MODULE=config.settings
       - POSTGRES_PORT=5432
       - POSTGRES_USER=teste
       - POSTGRES_PASSWORD=teste
@@ -14,7 +14,7 @@ services:
     depends_on:
       - db
     volumes:
-      - ./app:/django/app
+      - ./app:/code/app
     ports:
       - "8000:8000"
     entrypoint:

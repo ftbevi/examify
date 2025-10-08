@@ -15,10 +15,10 @@ RUN chmod +x entrypoint.sh
 
 RUN pip install -r requirements.txt
 
-RUN mkdir /django && mkdir /django/app
-COPY ./app django/app
+RUN mkdir /code && mkdir /code/server
+COPY ./server code/server
 
-WORKDIR /django/app
+WORKDIR /code/server
 
 RUN useradd usertest -m -s /bin/bash && chown -R usertest /home/usertest
 
